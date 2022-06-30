@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Minute Typing Test</title>
+    <!---- Google Fonts used ---->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---- Stylesheet ---->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>One Minute Typing Test</h1>
+    <div class="container">
+      <div class="te">
+        <p>Time: <span id="timer">0s</span></p>
+        <p>Errors: <span id="errors">0</span></p>
+      </div>
+      <div
+        id="paragraph"
+        onmousedown="return false"
+        onselectstart="return false"
+      ></div>
+      <textarea
+        rows="3"
+        id="paragraph-input"
+        placeholder="Press the start button to begin test."
+      ></textarea>
+      <button id="start-test" onclick="startTest()">Start Test</button>
+      <button id="stop-test" onclick="displayResult()">Stop Test</button>
+      <button id="retry" onclick="window.location.reload()">
+        Retry
+      </button>
+      <div class="results">
+        <h2>Results</h2>
+        <div class="as">
+          <p>Accuracy: <span id="accuracy"></span></p>
+          <br /><br/><br></br>
+          <p>Speed: <span id="wpm"></span></p>
+        </div>
+      </div>
+      <h3 id="instructions">
+      Instructions:
+        <div>
+        <p> 1. Type each word as fast and accurately as possible. <br>
+            2. You have 1 minute (60 seconds). <br>
+            3. You can redo the test as many times as you want. <br>
+            4. Click 'Start Test' to begin test. <br>
+        </p>
+        </div>
+      </h3>
+    </div>
+   
+   
+
+    <!---- Script ---->
+    <script src="script.js"></script>
+  </body>
+
+    <!---- Footer ---->
+  <footer class="footer">
+        <div>
+            Coded by
+        <a href="https://github.com/ashpie37" target="_blank" rel="noopener noreferrer" >Ashli 👩🏾‍💻 </a>
+        <div>
+        </footer>
+</html>
